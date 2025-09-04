@@ -2,7 +2,7 @@ import LyapunovLean.Common
 
 /-- Suppose we have a solution to a system dx/dt = f(x) defined for all time,
     and a Lyapunov function V such that
-    f.∇ V ≤ 0 and V ≥ x^2.
+    f⬝∇ V ≤ 0 and V ≥ x^2.
     Then the trajectory is bounded forwards in time. -/
 theorem Lyapunov
    {n : ℕ}
