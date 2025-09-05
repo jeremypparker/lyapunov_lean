@@ -3,7 +3,7 @@ This repository contains formal proofs for some results for Lyapunov/auxiliary f
 Currently there are two main results:
 
 # Classical Lyapunov function
-Lyapunov.lean contains the theorem currently called "Lyapunov", which a very simple Lyapunov theorem for stability. It states that if
+Lyapunov.lean contains the theorem currently called `Lyapunov`, which is a very simple Lyapunov theorem for stability. It states that if
 
 $f\cdot \nabla V(x) \leq 0$
 
@@ -18,7 +18,7 @@ $\frac{dx}{dt} = f(x)$
 which exist for all time are bounded.
 
 # Bounds for time averages
-We define the time average of a continuous observable $\Phi:\mathbb{R}^n\to\mathbb{R}$ as
+In TimeAverages.lean we define the time average of a continuous observable $\Phi:\mathbb{R}^n\to\mathbb{R}$ as
 
 $\bar\Phi(x_0) = \limsup_{T\to\infty} T^{-1}\int_0^T \Phi(x(t)) dt,$
 
@@ -28,7 +28,7 @@ $\frac{dx}{dt} = f(x), \qquad x(0)=x_0,$
 
 which remains in the compact set $\mathcal{B}\subset\mathbb{R}^n$.
 
-We prove that
+The theorem `V_gives_upper_bound`
 
 $\bar\Phi(x_0) \leq \sup_{x\in\mathcal{B}} \left(\Phi(x) + f\cdot\nabla V(x) \right)$
 
